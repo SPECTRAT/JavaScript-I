@@ -59,16 +59,16 @@ const Antonietta = {
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
-console.log(Mitzi.name);
-// Kennan's ID
-console.log(Kennan.name);
-// Keven's email
-console.log(Keven.name);
-// Gannie's name
-console.log(Gannie.name);
-// Antonietta's Gender
-console.log(Antonietta.name);
+// // Mitzi's name
+// console.log(Mitzi.name);
+// // Kennan's ID
+// console.log(Kennan.id);
+// // Keven's email
+// console.log(Keven.email);
+// // Gannie's name
+// console.log(Gannie.name);
+// // Antonietta's Gender
+// console.log(Antonietta.gender);
 
 
 // ==== Challenge 3: Object Methods ==== 
@@ -78,13 +78,17 @@ Kennan.speak = function(){
   return `Hello, my name is ${this.name}!`;
 }
 
-console.log(Kennan.speak());
+//console.log(Kennan.speak());
+
+
+
+// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+
 Antonietta.multiplyNums = function(num1, num2){
   return num1 * num2;
 }
 
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-console.log(Antonietta.multiplyNums(3,4));
+//console.log(Antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -112,21 +116,21 @@ const parent = {
       age : 30,
       greeting : function() {
         return `Hi, my name is ${this.name}!`;
-       },
+       }
     }
   }
 }
 
-// Log the parent object's name
-console.log(parent.name);
-// Log the child's age
-console.log(parent.child.age);
-// Log the name and age of the grandchild
-console.log(parent.child.grandchild.age);
-console.log(parent.child.grandchild.name);
-// Have the parent speak
-console.log(parent.greeting());
-// Have the child speak
-console.log(parent.child.greeting());
-// Have the grandchild speak
-console.log(parent.child.grandchild.greeting());
+// //Log the parent object's name
+// console.log(parent.name);
+// //Log the child's age
+// console.log(parent.child.age);
+// //Log the name and age of the grandchild
+// console.log(parent.child.grandchild.age);
+// console.log(parent.child.grandchild.name);
+// //Have the parent speak
+// console.log(parent.greeting());
+// //Have the child speak
+// console.log(parent.child.greeting());
+// //Have the grandchild speak
+// console.log(parent.child.grandchild.greeting());
