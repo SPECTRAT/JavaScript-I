@@ -68,7 +68,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory[inventory.length - 1];
+let lastCar = `${inventory[inventory.length - 1].car_make} ${inventory[inventory.length - 1].car_model}`;
 //console.log(lastCar);
 
 // ==== Challenge 3 ====
@@ -78,6 +78,17 @@ let carModels = [
 ];
 
 //console.log(carModels);
+
+let carModels2 = [];
+for (let i = 0; i < inventory.length; i++){
+  let models2 = inventory[i].car_model;
+  carModels2.push(models2);
+}
+
+let alphabetSort = carModels2.sort();
+//console.log(carModels2.sort());
+console.log(alphabetSort);
+// the way Jared would have done it...it's less confusing for me. Make a variable of the forlooped(?) array, then simply use the sort method on the new array in the console log. I wonder if I made what I logged into a seperate variable...coule I log JUST the variable? Instead of having to write out the .sort()? It works!! 
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -100,7 +111,7 @@ for (let i = 0; i < carYears.length; i++) {
     oldCars.push(carYears[i]);
   }
 }
-//console.log(oldCars); 
+//console.log(oldCars.length); 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
